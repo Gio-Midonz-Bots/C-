@@ -112,4 +112,20 @@ Console.Write("Digite o valor de C: ");
     double Delta = Math.Pow(B, 2) - 4 * A * C;
 
 Console.WriteLine($"\nO valor de Delta é: {Delta:F2}");
-  
+Console.WriteLine("----------------------------------------------------------------------------------------------------");  
+
+ //12) Crie um programa que leia o preço de um produto, calcule e mostre o seu 
+//PREÇO PROMOCIONAL, com 5% de desconto.
+        Console.WriteLine("Digite o preço do produto desejado:\n ");
+        double precoOriginal = double.Parse(Console.ReadLine());
+        double Promocao = precoOriginal * 0.95;
+
+        Console.WriteLine($"O preço a ser pago com o desconto é: {Promocao}\nObrigado pela preferência volte sempre");
+        Console.WriteLine("----------------------------------------------------------------------------------------------------");  
+//13) Faça um algoritmo que leia o salário de um funcionário, calcule e mostre o 
+//seu novo salário, com 15% de aumento.
+        Console.WriteLine($"Informe qual é o seu salário {nome}");
+        
+
+
+
