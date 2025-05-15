@@ -125,7 +125,12 @@ Console.WriteLine("-------------------------------------------------------------
 //13) Faça um algoritmo que leia o salário de um funcionário, calcule e mostre o 
 //seu novo salário, com 15% de aumento.
         Console.WriteLine($"Informe qual é o seu salário {nome}");
-        
+        double salario = double.Parse(Console.ReadLine());
+        double aumentoSalarial = salario * 0.15;
+        double novoSalario = aumentoSalarial + salario;
+
+        Console.WriteLine($"Seu novo salario é: {novoSalario}");
+
 
 
 
