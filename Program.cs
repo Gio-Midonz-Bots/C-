@@ -125,7 +125,49 @@ Console.WriteLine("-------------------------------------------------------------
 //13) Faça um algoritmo que leia o salário de um funcionário, calcule e mostre o 
 //seu novo salário, com 15% de aumento.
         Console.WriteLine($"Informe qual é o seu salário {nome}");
+        salario = double.Parse(Console.ReadLine());
+        double aumentoSalarial = salario * 0.15;
+        double novoSalario = aumentoSalarial + salario;
+
+        Console.WriteLine($"Seu novo salario é: {novoSalario}");
+        Console.WriteLine("----------------------------------------------------------------------------------------------------");  
+// 14) A locadora de carros precisa da sua ajuda para cobrar seus serviços. Escreva 
+// um programa que pergunte a quantidade de Km percorridos por um carro alugado e a 
+// quantidade de dias pelos quais ele foi alugado. Calcule o preço total a pagar, 
+// sabendo que o carro custa R$90 por dia e R$0,20 por Km rodado. 
+        Console.WriteLine("Quantos Km foi pecorrido pelo seu carro alugado? ");
+        double KmPecorrido = double.Parse(Console.ReadLine());
+        Console.WriteLine("Quantos dias foi alugado o carro? ");
+        int dias = int.Parse(Console.ReadLine());
+
+        double PrecoTotal = dias * 90 + KmPecorrido *0.20;
+
+        Console.WriteLine($"O valor total a ser pago pelo carro alugado é: R$ {PrecoTotal:F2}");
         
+// 15) Crie um programa que leia o número de dias trabalhados em um mês e mostre o 
+// salário de um funcionário, sabendo que ele trabalha 8 horas por dia e ganha R$25 
+// por hora trabalhada. 
+        Console.WriteLine($"quantos dias você trabalhou nesse mês?");
+        int diasTrabalhado = int.Parse(Console.ReadLine());
+        double salarioFuncionario =  8 * 25 * diasTrabalhado;
+
+        Console.WriteLine($"O salário do funcionairo é R$ {salarioFuncionario:F2}");
+
+// 16) [DESAFIO] Escreva um programa para calcular a redução do tempo de vida de um 
+// fumante. Pergunte a quantidade de cigarros fumados por dias e quantos anos ele 
+// já fumou. Considere que um fumante perde 10 min de vida a cada cigarro. Calcule 
+// quantos dias de vida um fumante perderá e exiba o total em dias.
+        Console.WriteLine("Quantos cigarros você fuma por dias?");
+        int cigarroFumado = int.Parse(Console.ReadLine());
+        Console.WriteLine("Quantos anos você já fuma cigarro?");
+        int anos = int.Parse(Console.ReadLine());
+
+        int calculoVida = 0 ;
 
 
 
+//PASSO 02 - CONDIÇÕES BÁSICAS 
+
+// 17) Escreva um programa que pergunte a velocidade de um carro. Caso ultrapasse 
+// 80Km/h, exiba uma mensagem dizendo que o usuário foi multado. Nesse caso, exiba 
+// o valor da multa, cobrando R$5 por cada Km acima da velocidade permitida.
