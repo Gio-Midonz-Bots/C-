@@ -125,11 +125,16 @@ Console.WriteLine("-------------------------------------------------------------
 //13) Faça um algoritmo que leia o salário de um funcionário, calcule e mostre o 
 //seu novo salário, com 15% de aumento.
         Console.WriteLine($"Informe qual é o seu salário {nome}");
+<<<<<<< HEAD
         salario = double.Parse(Console.ReadLine());
+=======
+        double salario = double.Parse(Console.ReadLine());
+>>>>>>> c6b14cd5745984cfaca17b2690676a544b193d10
         double aumentoSalarial = salario * 0.15;
         double novoSalario = aumentoSalarial + salario;
 
         Console.WriteLine($"Seu novo salario é: {novoSalario}");
+<<<<<<< HEAD
         Console.WriteLine("----------------------------------------------------------------------------------------------------");  
 // 14) A locadora de carros precisa da sua ajuda para cobrar seus serviços. Escreva 
 // um programa que pergunte a quantidade de Km percorridos por um carro alugado e a 
@@ -163,6 +168,9 @@ Console.WriteLine("-------------------------------------------------------------
         int anos = int.Parse(Console.ReadLine());
 
         int calculoVida = 0 ;
+=======
+
+>>>>>>> c6b14cd5745984cfaca17b2690676a544b193d10
 
 
 
