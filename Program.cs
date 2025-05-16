@@ -125,16 +125,13 @@ Console.WriteLine("-------------------------------------------------------------
 //13) Faça um algoritmo que leia o salário de um funcionário, calcule e mostre o 
 //seu novo salário, com 15% de aumento.
         Console.WriteLine($"Informe qual é o seu salário {nome}");
-<<<<<<< HEAD
+
         salario = double.Parse(Console.ReadLine());
-=======
-        double salario = double.Parse(Console.ReadLine());
->>>>>>> c6b14cd5745984cfaca17b2690676a544b193d10
+
         double aumentoSalarial = salario * 0.15;
         double novoSalario = aumentoSalarial + salario;
 
         Console.WriteLine($"Seu novo salario é: {novoSalario}");
-<<<<<<< HEAD
         Console.WriteLine("----------------------------------------------------------------------------------------------------");  
 // 14) A locadora de carros precisa da sua ajuda para cobrar seus serviços. Escreva 
 // um programa que pergunte a quantidade de Km percorridos por um carro alugado e a 
@@ -148,7 +145,7 @@ Console.WriteLine("-------------------------------------------------------------
         double PrecoTotal = dias * 90 + KmPecorrido *0.20;
 
         Console.WriteLine($"O valor total a ser pago pelo carro alugado é: R$ {PrecoTotal:F2}");
-        
+        Console.WriteLine("----------------------------------------------------------------------------------------------------");  
 // 15) Crie um programa que leia o número de dias trabalhados em um mês e mostre o 
 // salário de um funcionário, sabendo que ele trabalha 8 horas por dia e ganha R$25 
 // por hora trabalhada. 
@@ -157,7 +154,7 @@ Console.WriteLine("-------------------------------------------------------------
         double salarioFuncionario =  8 * 25 * diasTrabalhado;
 
         Console.WriteLine($"O salário do funcionairo é R$ {salarioFuncionario:F2}");
-
+        Console.WriteLine("----------------------------------------------------------------------------------------------------");  
 // 16) [DESAFIO] Escreva um programa para calcular a redução do tempo de vida de um 
 // fumante. Pergunte a quantidade de cigarros fumados por dias e quantos anos ele 
 // já fumou. Considere que um fumante perde 10 min de vida a cada cigarro. Calcule 
@@ -167,15 +164,48 @@ Console.WriteLine("-------------------------------------------------------------
         Console.WriteLine("Quantos anos você já fuma cigarro?");
         int anos = int.Parse(Console.ReadLine());
 
-        int calculoVida = 0 ;
-=======
+        int DiasPerdidos = (cigarroFumado * 365 * anos *10) / 60 / 24 ;
 
->>>>>>> c6b14cd5745984cfaca17b2690676a544b193d10
-
-
-
+        Console.WriteLine($"Seus dias perdidos é: {DiasPerdidos}");
+        Console.WriteLine("----------------------------------------------------------------------------------------------------");
 //PASSO 02 - CONDIÇÕES BÁSICAS 
 
 // 17) Escreva um programa que pergunte a velocidade de um carro. Caso ultrapasse 
 // 80Km/h, exiba uma mensagem dizendo que o usuário foi multado. Nesse caso, exiba 
 // o valor da multa, cobrando R$5 por cada Km acima da velocidade permitida.
+
+
+
+Console.WriteLine("----------------------------------------------------------------------------------------------------");  
+// 18) Faça um programa que leia o ano de nascimento de uma pessoa, calcule a idade 
+// dela e depois mostre se ela pode ou não votar. 
+
+
+
+Console.WriteLine("----------------------------------------------------------------------------------------------------");  
+// 19) Crie um algoritmo que leia o nome e as duas notas de um aluno, calcule a sua 
+// média e mostre na tela. No final, analise a média e mostre se o aluno teve ou 
+// não um bom aproveitamento (se ficou acima da média 7.0). 
+ 
+
+
+ Console.WriteLine("----------------------------------------------------------------------------------------------------");  
+// 20) Desenvolva um programa que leia um número inteiro e mostre se ele é PAR ou 
+// ÍMPAR. 
+ 
+
+
+ Console.WriteLine("----------------------------------------------------------------------------------------------------");  
+// 21) Faça um algoritmo que leia um determinado ano e mostre se ele é ou não 
+// BISSEXTO. 
+ 
+
+
+ Console.WriteLine("----------------------------------------------------------------------------------------------------");  
+// 22) Escreva um programa que leia o ano de nascimento de um rapaz e mostre a sua 
+// situação em relação ao alistamento militar. 
+//    - Se estiver antes dos 18 anos, mostre em quantos anos faltam para o 
+// alistamento. 
+//    - Se já tiver depois dos 18 anos, mostre quantos anos já se passaram do 
+// alistamento. 
+ 
