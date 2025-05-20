@@ -254,7 +254,7 @@ else
 Console.WriteLine("Informe o seu ano: ");
 int anoBissexto = int.Parse(Console.ReadLine());
 if (anoBissexto % 4 ==0) {
-    
+
     Console.WriteLine("é ano bissexto ");
 }
 else
@@ -270,4 +270,59 @@ else
 // alistamento. 
 //    - Se já tiver depois dos 18 anos, mostre quantos anos já se passaram do 
 // alistamento. 
- 
+
+Console.WriteLine("Informe o ano de nascimento: ");
+int anoDeNascimentoRapaz = int.Parse(Console.ReadLine());
+int calcularIdadeRapaz = 2025 - anoDeNascimentoRapaz;
+int temporestante = 18 - calcularIdadeRapaz ;
+if (calcularIdadeRapaz == 18)
+{
+    Console.WriteLine($"Sua idade é {calcularIdadeRapaz}, então você deve se Alistar!");
+}
+else if (calcularIdadeRapaz > 18)
+{
+    Console.WriteLine($"Sua idade é {calcularIdadeRapaz}, então você utrapassou o tempo de se Alistar, deve se aprensentar no quartel!");
+}
+else
+{
+    Console.WriteLine($"Sua idade é {calcularIdadeRapaz}, então você tem que esperar mais {temporestante} anos.");
+}
+ Console.WriteLine("----------------------------------------------------------------------------------------------------");  
+// 23) Numa promoção exclusiva para o Dia da Mulher, uma loja quer dar descontos 
+// para todos, mas especialmente para mulheres. Faça um programa que leia nome, 
+// sexo e o valor das compras do cliente e calcule o preço com desconto. Sabendo 
+// que: - Homens ganham 5% de desconto - Mulheres ganham 13% de desconto 
+ Console.WriteLine("Informe o seu nome:");
+string nomeCliente = Console.ReadLine();
+Console.WriteLine($"Informe o seu Sexo: 'F' para feminino ou 'M' para masculino");
+char sexo = char.Parse(Console.ReadLine());
+Console.WriteLine($"Informe o valor total das suas compras:");
+double ValorTotalCompras = double.Parse(Console.ReadLine());
+double descontoDiaDaMulher = ValorTotalCompras * 0.13;
+double descontoDiaDaMulherParaHomens = ValorTotalCompras * 0.05;
+double ResultadoDoDescontoMulheres = ValorTotalCompras - descontoDiaDaMulher;
+double ResultadoDoDescontoHomens = ValorTotalCompras - descontoDiaDaMulherParaHomens;
+if (sexo == 'M' || sexo == 'm')
+{
+    Console.WriteLine($"Você Ganhou uma promoção dos dias da Mulher!\nNo valor de 5%. O seu valor total é R$ {ValorTotalCompras} o valor do desconto é de R${descontoDiaDaMulherParaHomens} \ncom o desconto o valor fica R${ResultadoDoDescontoHomens}");
+}
+else if (sexo == 'F' || sexo == 'f')
+{
+
+    Console.WriteLine($"Você Ganhou uma promoção dos dias da Mulher!\nNo valor de 13%. O seu valor total é R$ {ValorTotalCompras} o valor do desconto é de R${descontoDiaDaMulher} \ncom o desconto o valor fica R${ResultadoDoDescontoMulheres}");
+}
+else
+{
+    Console.WriteLine("Infelizmente você digitou algo errado");
+}
+
+Console.WriteLine("----------------------------------------------------------------------------------------------------");  
+// 24) Faça um algoritmo que pergunte a distância que um passageiro deseja 
+// percorrer em Km. Calcule o preço da passagem, cobrando R$0.50 por Km para 
+// viagens até 200Km e R$0.45 para viagens mais longas. 
+
+ Console.WriteLine("----------------------------------------------------------------------------------------------------");  
+// 25) [DESAFIO] Crie um programa que leia o tamanho de três segmentos de reta. 
+// Analise seus comprimentos e diga se é possível formar um triângulo com essas 
+// retas. Matematicamente, para três segmentos formarem um triângulo, o comprimento 
+// de cada lado deve ser menor que a soma dos outros dois.
