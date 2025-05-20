@@ -173,32 +173,94 @@ Console.WriteLine("-------------------------------------------------------------
 // 17) Escreva um programa que pergunte a velocidade de um carro. Caso ultrapasse 
 // 80Km/h, exiba uma mensagem dizendo que o usuário foi multado. Nesse caso, exiba 
 // o valor da multa, cobrando R$5 por cada Km acima da velocidade permitida.
+Console.WriteLine("Parabéns por Ter chegado até aqui, Vamos Seguir em frete!!!!!!!!!!!");
+        Console.WriteLine("\nQual é velocidade do carro: ");
+        double velocidadeCarro = double.Parse(Console.ReadLine());
+        double kmUltrapassado = (velocidadeCarro - 80); 
+        double valorDaMulta = kmUltrapassado  * 5;
 
+if (velocidadeCarro >= 80)
+{
+    Console.WriteLine($"Você ultrapassou {kmUltrapassado}km/h, sua multa é de R$: {valorDaMulta} infelizmente você foi multado!");
+}
+else
+{
+    Console.WriteLine("Você está em conformidade, Parabéns!");
+}
 
 
 Console.WriteLine("----------------------------------------------------------------------------------------------------");  
 // 18) Faça um programa que leia o ano de nascimento de uma pessoa, calcule a idade 
 // dela e depois mostre se ela pode ou não votar. 
+Console.WriteLine("----------------------------------------------------------------------------------------------------");
+Console.WriteLine("Qual é o ano do seu nascimento: ");
+int anoNascimento = int.Parse(Console.ReadLine());
+int qualIdade = 2025 - anoNascimento ;
 
+if (qualIdade >= 18)
+{
+    Console.WriteLine("Você pode votar!");
+}
+else
+{
+    Console.WriteLine("Você é de menor, não pode votar");
+}
 
-
-Console.WriteLine("----------------------------------------------------------------------------------------------------");  
-// 19) Crie um algoritmo que leia o nome e as duas notas de um aluno, calcule a sua 
+Console.WriteLine("----------------------------------------------------------------------------------------------------");
+// // 19) Crie um algoritmo que leia o nome e as duas notas de um aluno, calcule a sua 
 // média e mostre na tela. No final, analise a média e mostre se o aluno teve ou 
 // não um bom aproveitamento (se ficou acima da média 7.0). 
- 
+
+Console.WriteLine("Qual é o seu nome:");
+string nomeAluno = Console.ReadLine();
+Console.WriteLine("Qual é a sua primeira nota:");
+int notaPrimeira = int.Parse(Console.ReadLine());
+
+Console.WriteLine("Qual é a sua segunda nota:");
+int notaSegunda = int.Parse(Console.ReadLine());
+
+int mediaAluno = (notaPrimeira + notaSegunda) / 2;
+Console.WriteLine($"Sua primeira nota é: {notaPrimeira}. Sua segunda nota é: {notaSegunda}\nSua média é: {mediaAluno}");
+if (mediaAluno > 7)
+{
+    Console.WriteLine("Parabéns! Você teve um bom aproveitamento");
+}
+else
+{
+    Console.WriteLine("Infelizmente, Você não teve um bom aproveitamento");
+}
+
 
 
  Console.WriteLine("----------------------------------------------------------------------------------------------------");  
 // 20) Desenvolva um programa que leia um número inteiro e mostre se ele é PAR ou 
 // ÍMPAR. 
- 
+Console.WriteLine("Informe um número inteiro:");
+int numeroInteiro = int.Parse(Console.ReadLine());
+
+if (numeroInteiro % 2 == 0)
+{
+    Console.WriteLine("é Par");
+}
+else
+{
+    Console.WriteLine("é Impar");
+}
 
 
- Console.WriteLine("----------------------------------------------------------------------------------------------------");  
+ Console.WriteLine("----------------------------------------------------------------------------------------------------");
 // 21) Faça um algoritmo que leia um determinado ano e mostre se ele é ou não 
 // BISSEXTO. 
- 
+Console.WriteLine("Informe o seu ano: ");
+int anoBissexto = int.Parse(Console.ReadLine());
+if (anoBissexto % 4 ==0) {
+    
+    Console.WriteLine("é ano bissexto ");
+}
+else
+{
+    Console.WriteLine("Nõ ");
+}
 
 
  Console.WriteLine("----------------------------------------------------------------------------------------------------");  
