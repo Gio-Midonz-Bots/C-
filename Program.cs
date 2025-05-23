@@ -316,13 +316,87 @@ else
     Console.WriteLine("Infelizmente você digitou algo errado");
 }
 
-Console.WriteLine("----------------------------------------------------------------------------------------------------");  
+// Console.WriteLine("----------------------------------------------------------------------------------------------------");
 // 24) Faça um algoritmo que pergunte a distância que um passageiro deseja 
 // percorrer em Km. Calcule o preço da passagem, cobrando R$0.50 por Km para 
 // viagens até 200Km e R$0.45 para viagens mais longas. 
+Console.WriteLine($"Qual é a distância que o você deseja percorrer?");
+double distanciaPassageiro = double.Parse(Console.ReadLine());
+double calcPercurso = 0;
+if (distanciaPassageiro == 200)
+{
+   calcPercurso = distanciaPassageiro * 0.50;
+    Console.WriteLine($"Sua passagem ficou no valor de R${calcPercurso} ");
 
- Console.WriteLine("----------------------------------------------------------------------------------------------------");  
-// 25) [DESAFIO] Crie um programa que leia o tamanho de três segmentos de reta. 
+}
+else
+{
+    calcPercurso = distanciaPassageiro * 0.45;
+    Console.WriteLine($"Sua passagem ficou no valor de R${calcPercurso} ");
+
+}
+ Console.WriteLine("----------------------------------------------------------------------------------------------------");
+// 25) 
+
+
+
+
+//[DESAFIO] Crie um programa que leia o tamanho de três segmentos de reta. 
 // Analise seus comprimentos e diga se é possível formar um triângulo com essas 
 // retas. Matematicamente, para três segmentos formarem um triângulo, o comprimento 
 // de cada lado deve ser menor que a soma dos outros dois.
+Console.WriteLine("----------------------------------------------------------------------------------------------------");
+// 26) Escreva um algoritmo que leia dois números inteiros e compare-os, mostrando 
+// na tela uma das mensagens abaixo: 
+//    - O primeiro valor é o maior 
+//    - O segundo valor é o maior 
+//    - Não existe valor maior, os dois são iguais 
+Console.WriteLine($"informe qual é suas duas notas");
+int avaliacaoUM = int.Parse(Console.ReadLine());
+int avaliacaoDois = int.Parse(Console.ReadLine());
+if (avaliacaoUM > avaliacaoDois)
+{
+    Console.WriteLine($"A primeira avaliação foi maior que a segunda avaliação.");
+}
+else if (avaliacaoDois > avaliacaoUM)
+{
+    Console.WriteLine($"A segunda avaliação foi maior que a primeira avaliação.");
+}
+else
+{
+    Console.WriteLine($"As duas avaliações tem o mesmo valor.");
+}
+
+Console.WriteLine("----------------------------------------------------------------------------------------------------");
+// 27) Crie um programa que leia duas notas de um aluno e calcule a sua média, 
+// mostrando uma mensagem no final, de acordo com a média atingida: 
+//    - Média até 4.9: REPROVADO 
+//    - Média entre 5.0 e 6.9: RECUPERAÇÃO 
+//    - Média 7.0 ou superior: APROVADO 
+ Console.WriteLine("----------------------------------------------------------------------------------------------------");
+// 28) Faça um programa que leia a largura e o comprimento de um terreno 
+// retangular, calculando e mostrando a sua área em m². O programa também 
+// devemostrar a classificação desse terreno, de acordo com a lista abaixo: 
+//    - Abaixo de 100m² = TERRENO POPULAR 
+//    - Entre 100m² e 500m² = TERRENO MASTER 
+//    - Acima de 500m² = TERRENO VIP 
+ Console.WriteLine("----------------------------------------------------------------------------------------------------");
+// 29) Desenvolva um programa que leia o nome de um funcionário, seu salário, 
+// quantos anos ele trabalha na empresa e mostre seu novo salário, reajustado de 
+// acordo com a tabela a seguir: 
+//    - Até 3 anos de empresa: aumento de 3% 
+//    - entre 3 e 10 anos: aumento de 12.5% 
+//    - 10 anos ou mais: aumento de 20% 
+ Console.WriteLine("----------------------------------------------------------------------------------------------------");
+// 30) [DESAFIO] Refaça o algoritmo 25, acrescentando o recurso de mostrar que tipo 
+// de triângulo será formado:  
+//    - EQUILÁTERO: todos os lados iguais 
+//    - ISÓSCELES: dois lados iguais 
+//    - ESCALENO: todos os lados diferentes 
+ Console.WriteLine("----------------------------------------------------------------------------------------------------");
+// 31) [DESAFIO] Crie um jogo de JoKenPo (Pedra-Papel-Tesoura) 
+Console.WriteLine("----------------------------------------------------------------------------------------------------"); 
+// 32) [DESAFIO] Crie um jogo onde o computador vai sortear um número entre 1 e 5 o 
+// jogador vai tentar descobrir qual foi o valor sorteado. 
+ 
+  
