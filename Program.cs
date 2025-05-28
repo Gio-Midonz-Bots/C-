@@ -514,12 +514,23 @@ string jogadaComputador = opcoes[escolhaComputador];
   Console.WriteLine("\nVocê jogou: " + jogadaJogador);
         Console.WriteLine("Computador jogou: " + jogadaComputador);
 
-Console.WriteLine("----------------------------------------------------------------------------------------------------"); 
+Console.WriteLine("----------------------------------------------------------------------------------------------------");
 // 32) [DESAFIO] Crie um jogo onde o computador vai sortear um número entre 1 e 5 o 
 // jogador vai tentar descobrir qual foi o valor sorteado. 
- 
 
-
+int[] numero = { 1, 2, 3, 4, 5 };
+Random randomNumero = new Random();
+Console.WriteLine("32- -------Advinhe o Número--------");
+Console.WriteLine("Qual número você acha que é: ");
+int numeroDoJogador = int.Parse(Console.ReadLine());
+if (numeroDoJogador < 1 || numeroDoJogador > 5) {
+    Console.WriteLine("Você digitou o número errado!");
+}
+int numeroDaJogada = numero[numeroDoJogador - 1];
+int Computador = randomNumero.Next(0, 5);
+int JogadaDOComputador = numero[Computador];
+Console.WriteLine($"você pensou que era o número: {numeroDaJogada}");
+Console.WriteLine($"O computador escolheu o número: {JogadaDOComputador}");
 // 33) Escreva um programa para aprovar ou não o empréstimo bancário para a compra 
 // de uma casa. O programa vai perguntar o valor da casa, o salário do comprador e 
 // em quantos anos ele vai pagar. Calcule o valor da prestação mensal, sabendo que 
