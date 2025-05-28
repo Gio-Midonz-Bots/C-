@@ -535,7 +535,22 @@ Console.WriteLine($"O computador escolheu o número: {JogadaDOComputador}");
 // de uma casa. O programa vai perguntar o valor da casa, o salário do comprador e 
 // em quantos anos ele vai pagar. Calcule o valor da prestação mensal, sabendo que 
 // ela não pode exceder 30% do salário ou então o empréstimo será negado. 
- 
+ Console.WriteLine("33- -------Empréstimo Bancário--------");
+
+Console.WriteLine("Qual é o valor da casa: ");
+double precoDaCasa = double.Parse(Console.ReadLine());
+
+
+Console.WriteLine("Qual é o valor o seu Salário: ");
+double salarioDoComprador = double.Parse(Console.ReadLine());
+
+
+Console.WriteLine("Quantos anos será o pagemento? ");
+int anosPagando = int.Parse(Console.ReadLine());
+
+
+
+
 // 34) O Índice de Massa Corpórea (IMC) é um valor calculado baseado na altura e no 
 // peso de uma pessoa. De acordo com o valor do IMC, podemos classificar o 
 // indivíduo dentro de certas faixas. 
