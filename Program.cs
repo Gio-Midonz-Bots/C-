@@ -643,6 +643,11 @@ else
 // 38) Escreva um programa que mostre na tela a seguinte contagem:  
 // 6 7 8 9 10 11 Acabou! 
  
+for (int i = 6; i <= 11; i++)
+{
+    Console.WriteLine("Número:" + i);
+}
+    Console.WriteLine("Acabou!");
 // 39) Faça um algoritmo que mostre na tela a seguinte contagem: 
 // 10 9 8 7 6 5 4 3 Acabou! 
  
