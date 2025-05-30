@@ -548,8 +548,16 @@ double salarioDoComprador = double.Parse(Console.ReadLine());
 Console.WriteLine("Quantos anos será o pagemento? ");
 int anosPagando = int.Parse(Console.ReadLine());
 
+int totalDeMeses = anosPagando * 12;
+double calcPorcetagemDoSalario= salarioDoComprador*0.30;
 
+double parcelaDoEmprestimo=precoDaCasa * totalDeMeses;
 
+if(parcelaDoEmprestimo <= calcPorcetagemDoSalario){
+    Console.WriteLine("Emprestimo Aprovado!");
+}else{
+    Console.WriteLine("Infelizmente não será Aprovado!");
+}
 
 // 34) O Índice de Massa Corpórea (IMC) é um valor calculado baseado na altura e no 
 // peso de uma pessoa. De acordo com o valor do IMC, podemos classificar o 
