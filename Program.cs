@@ -571,7 +571,33 @@ if(parcelaDoEmprestimo <= calcPorcetagemDoSalario){
  
 // Obs: O IMC é calculado pela expressão peso/altura² (peso dividido pelo quadrado 
 // da altura) 
- 
+ Console.WriteLine("34- -------Calcular O Índice de Massa Corpórea:");
+Console.WriteLine("Informe sua altura");
+double Altura = double.Parse(Console.ReadLine());
+Console.WriteLine("Informe seu peso");
+double Peso = double.Parse(Console.ReadLine());
+double IMC = Peso / (Altura * Altura) ;
+if (IMC < 18.5)
+{
+    Console.WriteLine("Classificação: Abaixo do peso;");
+}
+else if (IMC >= 18.5 && IMC < 25)
+{
+    Console.WriteLine("Classificação: Peso Ideal;");
+}
+else if (IMC >= 25 && IMC < 30)
+{
+    Console.WriteLine("Classificação: SobrePeso;");
+}
+else if (IMC >= 30 && IMC < 40)
+{
+    Console.WriteLine("Classificação: Obesidade");
+}
+else
+{
+    Console.WriteLine("Classificação: Obsidade mórbida;");
+}
+
 // 35) Uma empresa de aluguel de carros precisa cobrar pelos seus serviços. O 
 // aluguel de um carro custa R$90 por dia para carro popular e R$150 por dia para 
 // carro de luxo. Além disso, o cliente paga por Km percorrido. Faça um programa 
