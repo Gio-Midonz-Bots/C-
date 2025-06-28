@@ -562,21 +562,21 @@ if(parcelaDoEmprestimo <= calcPorcetagemDoSalario){
 // 34) O Índice de Massa Corpórea (IMC) é um valor calculado baseado na altura e no 
 // peso de uma pessoa. De acordo com o valor do IMC, podemos classificar o 
 // indivíduo dentro de certas faixas. 
- 
+
 //    - abaixo de 18.5: Abaixo do peso 
 //    - entre 18.5 e 25: Peso ideal 
 //    - entre 25 e 30: Sobrepeso 
 //    - entre 30 e 40: Obesidade 
 //    - acima de 40: Obseidade mórbida 
- 
+
 // Obs: O IMC é calculado pela expressão peso/altura² (peso dividido pelo quadrado 
 // da altura) 
  Console.WriteLine("34- -------Calcular O Índice de Massa Corpórea:");
 Console.WriteLine("Informe sua altura");
-double Altura = double.Parse(Console.ReadLine());
+double Altura1 = double.Parse(Console.ReadLine());
 Console.WriteLine("Informe seu peso");
 double Peso = double.Parse(Console.ReadLine());
-double IMC = Peso / (Altura * Altura) ;
+double IMC = Peso / (Altura1 * Altura1) ;
 if (IMC < 18.5)
 {
     Console.WriteLine("Classificação: Abaixo do peso;");
@@ -604,31 +604,73 @@ else
 // que leia o tipo de carro alugado (popular ou luxo), quantos dias de aluguel e 
 // quantos Km foram percorridos. No final mostre o preço a ser pago de acordo com a 
 // tabela a seguir: 
- 
+
 //    - Carros populares (aluguel de R$90 por dia) 
 //       - Até 100Km percorridos: R$0,20 por Km 
 //       - Acima de 100Km percorridos: R$0,10 por Km 
 //    - Carros de luxo (aluguel de R$150 por dia) 
 //       - Até 200Km percorridos: R$0,30 por Km 
 //       - Acima de 200Km percorridos: R$0,25 por Km 
- 
+double aluguelPorDiaPopular = 90;
+double aluguelPorDiaLuxo = 150;
+double calcDoKMPecorrido = 0;
+double valorSerPago = 0;
+Console.WriteLine("Qual é o tipo do seu carro:");
+string tipoCarro = Console.ReadLine();
+Console.WriteLine("Quantos dias você alugou o carro:");
+int quantoDiasDeAluguel = int.Parse(Console.ReadLine());
+Console.WriteLine("Quantos KM pecorrido:");
+double KmPecorridoAlugado = double.Parse(Console.ReadLine());
+if (tipoCarro == "Popular")
+{
+    if (KmPecorridoAlugado <= 100)
+    {
+        calcDoKMPecorrido = KmPecorridoAlugado * 0.20;
+    }
+    else
+    {
+        calcDoKMPecorrido = KmPecorridoAlugado * 0.10;
+    }
+
+    valorSerPago =calcDoKMPecorrido*quantoDiasDeAluguel*aluguelPorDiaPopular;
+    Console.WriteLine($"O valor a ser pago é: {valorSerPago}");
+
+}
+else if (tipoCarro == "Luxo")
+{
+if (KmPecorridoAlugado <= 200)
+    {
+        calcDoKMPecorrido = KmPecorridoAlugado * 0.30;
+    }
+    else
+    {
+        calcDoKMPecorrido = KmPecorridoAlugado * 0.25;
+    }
+
+    valorSerPago =calcDoKMPecorrido*quantoDiasDeAluguel*aluguelPorDiaLuxo;
+    Console.WriteLine($"O valor a ser pago é: {valorSerPago}");
+}
+else
+{
+
+}
 // 36) Um programa de vida saudável quer dar pontos atividades físicas que podem 
 // ser trocados por dinheiro. O sistema funciona assim: 
- 
+
 //    - Cada hora de atividade física no mês vale pontos 
 //       - até 10h de atividade no mês: ganha 2 pontos por hora 
 //       - de 10h até 20h de atividade no mês: ganha 5 pontos por hora 
 //       - acima de 20h de atividade no mês: ganha 10 pontos por hora 
 //    - A cada ponto ganho, o cliente fatura R$0,05 (5 centavos)   
- 
+
 // Faça um programa que leia quantas horas de atividade uma pessoa teve por mês, 
 // calcule e mostre quantos pontos ela teve e quanto dinheiro ela conseguiu ganhar. 
- 
+
 // 37) Uma empresa precisa reajustar o salário dos seus funcionários, dando um 
 // aumento de acordo com alguns fatores. Faça um programa que leia o salário atual, 
 // o gênero do funcionário e há quantos anos esse funcionário trabalha na empresa. 
 // No final, mostre o seu novo salário, baseado na tabela a seguir: 
- 
+
 // - Mulheres 
 //   - menos de 15 anos de empresa: +5% 
 //   - de 15 até 20 anos de empresa: +12% 
@@ -642,7 +684,7 @@ else
 // PASSO 04 – REPETIÇÕES ENQUANTO  
 // 38) Escreva um programa que mostre na tela a seguinte contagem:  
 // 6 7 8 9 10 11 Acabou! 
- 
+
 for (int i = 6; i <= 11; i++)
 {
     Console.WriteLine("Número:" + i);
@@ -650,15 +692,35 @@ for (int i = 6; i <= 11; i++)
     Console.WriteLine("Acabou!");
 // 39) Faça um algoritmo que mostre na tela a seguinte contagem: 
 // 10 9 8 7 6 5 4 3 Acabou! 
- 
+for (int i = 10; i >= 3; i--)
+{
+    Console.WriteLine("Número: " + i);
+
+ }
+Console.WriteLine("Acabou!");
 // 40) Crie um aplicativo que mostre na tela a seguinte contagem: 
-// 0 3 6 9 12 15 18 Acabou! 
- 
+// 0 3 6 9 12 15 18 Acabou!
+for (int i = 0; i <= 18; i+=3)
+{
+    Console.WriteLine("Número: " + i);
+}
+Console.WriteLine("Acabou!");
 // 41) Desenvolva um programa que mostre na tela a seguinte contagem: 
 // 100 95 90 85 80 ... 0 Acabou! 
- 
+for (int i = 100; i >= 80; i -= 5)
+{
+    Console.WriteLine("Número: " + i);
+  }
+Console.WriteLine("Acabou!");
 // 42) Faça um algoritmo que pergunte ao usuário um número inteiro e positivo 
 // qualquer e mostre uma contagem até esse valor: 
 // Ex: Digite um valor: 35 
 // Contagem: 1 2 3 4 5 6 7 ... 33 34 35 Acabou!
+Console.WriteLine("Informe um número inteiro e positivo");
+int numeroIntPositvo = int.Parse(Console.ReadLine());
 
+for (int i = 1; i <= numeroIntPositvo; i++)
+{
+    Console.WriteLine("Número: " + i);
+}
+Console.WriteLine("Acabou!");
