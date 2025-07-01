@@ -685,31 +685,31 @@ else
 // 38) Escreva um programa que mostre na tela a seguinte contagem:  
 // 6 7 8 9 10 11 Acabou! 
 
-for (int i = 6; i <= 11; i++)
+for (int j = 6; j <= 11; j++)
 {
-    Console.WriteLine("Número:" + i);
+    Console.WriteLine("Número:" + j);
 }
     Console.WriteLine("Acabou!");
 // 39) Faça um algoritmo que mostre na tela a seguinte contagem: 
 // 10 9 8 7 6 5 4 3 Acabou! 
-for (int i = 10; i >= 3; i--)
+for (int g = 10; g >= 3; g--)
 {
-    Console.WriteLine("Número: " + i);
+    Console.WriteLine("Número: " + g);
 
  }
 Console.WriteLine("Acabou!");
 // 40) Crie um aplicativo que mostre na tela a seguinte contagem: 
 // 0 3 6 9 12 15 18 Acabou!
-for (int i = 0; i <= 18; i+=3)
+for (int h = 0; h <= 18; h+=3)
 {
-    Console.WriteLine("Número: " + i);
+    Console.WriteLine("Número: " + h);
 }
 Console.WriteLine("Acabou!");
 // 41) Desenvolva um programa que mostre na tela a seguinte contagem: 
 // 100 95 90 85 80 ... 0 Acabou! 
-for (int i = 100; i >= 80; i -= 5)
+for (int k = 100; k >= 80; k -= 5)
 {
-    Console.WriteLine("Número: " + i);
+    Console.WriteLine("Número: " + k);
   }
 Console.WriteLine("Acabou!");
 // 42) Faça um algoritmo que pergunte ao usuário um número inteiro e positivo 
@@ -719,8 +719,90 @@ Console.WriteLine("Acabou!");
 Console.WriteLine("Informe um número inteiro e positivo");
 int numeroIntPositvo = int.Parse(Console.ReadLine());
 
-for (int i = 1; i <= numeroIntPositvo; i++)
+for (int l = 1; l <= numeroIntPositvo; l++)
 {
-    Console.WriteLine("Número: " + i);
+    Console.WriteLine("Número: " + l);
 }
 Console.WriteLine("Acabou!");
+// 43) Desenvolva um algoritmo que mostre uma contagem regressiva de 30 até 1, 
+// marcando os números que forem divisíveis por 4, exatamente como mostrado abaixo: 
+// 30 29 [28] 27 26 25 [24] 23 22 21 [20] 19 18 17 [16]... 
+Console.WriteLine("Exercicio 43 - Parabéns!");
+for (int o = 30; o >= 1; o--)
+{
+    if (o % 4 == 0)
+    {
+        Console.WriteLine("[" + o + "]");
+    }
+    else
+    {
+    Console.WriteLine(o);
+    }
+}
+Console.WriteLine("Acabou!");
+// 44) Crie um algoritmo que leia o valor inicial da contagem, o valor final e o 
+// incremento, mostrando em seguida todos os valores no intervalo: 
+// Ex: Digite o primeiro Valor: 3 
+// Digite o último Valor: 10 
+// Digite o incremento: 2 
+// Contagem: 3 5 7 9 Acabou! 
+ Console.WriteLine("Exercicio 44 - Parabéns!");
+ Console.WriteLine("Informe qual é o primeiro valor:");
+int primeiroValor = int.Parse(Console.ReadLine());
+ Console.WriteLine("Informe qual é o último valor:");
+int ultimoValor = int.Parse(Console.ReadLine());
+ Console.WriteLine("Informe qual é o valor do Incremento:");
+int incremento = int.Parse(Console.ReadLine());
+
+for (int p=primeiroValor; p < ultimoValor;p+=incremento)
+{
+    Console.WriteLine("\n"+p);
+}
+Console.WriteLine("Acabou!");
+// 45) O programa acima vai ter um problema quando digitarmos o primeiro valor 
+// maior que o último. Resolva esse problema com um código que funcione em qualquer 
+// situação. 
+Console.WriteLine("Exercicio 45 - Parabéns!");
+ Console.WriteLine("Informe qual é o primeiro valor:");
+int primeiroValorr = int.Parse(Console.ReadLine());
+ Console.WriteLine("Informe qual é o último valor:");
+int ultimoValorr = int.Parse(Console.ReadLine());
+ Console.WriteLine("Informe qual é o valor do Incremento:");
+int incrementoo = int.Parse(Console.ReadLine());
+
+int i;
+if (primeiroValor > ultimoValor)
+{
+    for (i = primeiroValor; i > ultimoValor; i -= incremento)
+    {
+        Console.WriteLine("\n" + i);
+    }
+}
+else
+{
+for (i = primeiroValor; i < ultimoValor; i += incremento)
+{
+    Console.WriteLine("\n" + i);
+}   
+}
+Console.WriteLine("Acabou!");
+// 46) Crie um programa que calcule e mostre na tela o resultado da soma entre 6 + 
+// 8 + 10 + 12 + 14 + ... + 98 + 100. 
+ 
+// 47) Desenvolva um aplicativo que mostre na tela o resultado da expressão 500 + 
+// 450 + 400 + 350 + 300 + ... + 50 + 0 
+ 
+// 48) Faça um programa que leia 7 números inteiros e no final mostre o somatório 
+// entre eles. 
+ 
+// 49) Crie um programa que leia 6 números inteiros e no final mostre quantos deles 
+// são pares e quantos são ímpares. 
+ 
+// 50) Desenvolva um programa que faça o sorteio de 20 números entre 0 e 10 e 
+// mostre na tela: 
+//  a) Quais foram os números sorteados 
+//  b) Quantos números estão acima de 5 
+//  c) Quantos números são divisíveis por 3 
+ 
+// 51) Faça um aplicativo que leia o preço de 8 produtos. No final, mostre na tela 
+// qual foi o maior e qual foi o menor preço digitados. 
